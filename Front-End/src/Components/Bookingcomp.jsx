@@ -15,7 +15,7 @@ export default function Bookingcomp() {
     const createEmployee = async (data) => {
 
         const savedUserResponse = await fetch(
-            `http://localhost:4000/api/v1/createUser`,
+            `https://demohaweli-api.vercel.app/api/v1/createUser`,
             {
                 method: "POST",
                 headers: {
