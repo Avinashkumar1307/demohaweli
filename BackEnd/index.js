@@ -21,7 +21,7 @@ app.use('/api/v1', user);
 const phonepeRoute = require('./routes/phonepeRoute')
 app.use("/api", phonepeRoute);
 
-app.get("/",(req,res) =>{
+app.get("/avinash",(req,res) =>{
     res.json("hello");
 })
 
