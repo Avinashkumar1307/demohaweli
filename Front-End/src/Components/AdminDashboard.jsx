@@ -6,7 +6,7 @@ function AdminDashboard() {
     const getAllData = async () => {
         try {
             const getPeople = await fetch(
-                `http://localhost:4000/api/v1/getUserdata`,
+                `https://demohaweli-api.vercel.app/api/v1/getUserdata`,
                 {
                     method: "GET",
                     headers: {
