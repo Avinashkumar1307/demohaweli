@@ -5,11 +5,13 @@ require('dotenv').config();
 const PORT = process.env.PORT || 4000;
 
 app.use(express.json());
+const allowedOrigins = ["https://demohaweli-frontend.vercel.app"];
+
 app.use(
     cors({
-        origin: ["https://demohaweli-frontend.vercel.app"],
-        methods:["POST","GET"],
-        credentials:true
+        origin: allowedOrigins,
+        methods: ["POST", "GET"],
+        credentials: true
     })
 );
 require('./config/database').connect();
